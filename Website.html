@@ -1,5 +1,45 @@
 <html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Page title</title>
+    </head>
     <body>
+        <script>
+            let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+            for (let i = 1; i <= answer; i++) {
+            if (i % 3 === 0) {
+                console.log("Fizz");
+            } else if (i % 5 === 0) {
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
+            }
+            
+        function add7(p1){
+            return p1 + 7
+        }
+        
+        function multiply(p1,p2){
+            return p1*p2
+        }
+        console.log(add7(2))
+        console.log(multiply(2,2))
+
+        function capitalize(s1){
+            let s2 = s1.charAt(0).toUpperCase() + s1.slice(1);
+            return s2;
+        }
+        console.log(capitalize("testing"))
+
+        function lastLetter(s1){
+            let c1 = s1.charAt(s1.length-1)
+            return c1;
+        }
+        console.log(lastLetter("testing"))
+
+        </script>
         <h1>Test</h1>
     </body>
 </html>
